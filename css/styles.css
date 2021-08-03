@@ -290,6 +290,10 @@ footer a {
     text-align: left;
 }
 
+.right ul li {
+	padding: 15px 10px;
+}
+
 /*----------- Right Aside Styling (end) ------------*/
 
 /*--******************* Home Page Styling (end) ************************--*/
