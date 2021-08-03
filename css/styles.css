@@ -21,6 +21,9 @@ Ratio (Light)
 Mr. Eaves Mod OT
 	font-family: 'mr-eaves-modern', sans-serif;
 
+Josefin Sans
+	font-family: 'josefin-sans', sans-serif;
+
 -------------------------------------------------------------------*/
 
 /*--******************* Universal Styling (begin) **********************--*/
@@ -36,6 +39,8 @@ body {
 
 .content {
 	flex: 1 0 auto;
+	max-width: 1000px;
+	width: 100%
 }
 
 header, footer {
@@ -43,6 +48,7 @@ header, footer {
 }
 /*-- End Sticky Footer --*/
 
+/*----------- Header Styling (begin) -----------*/
 .desktop-nav {
   display: none;
 }
@@ -60,7 +66,7 @@ header, footer {
   padding:5px 15px 0 15px;
   position:absolute;
   right:0;
-  top:20%;
+  /* top:20%; */
   z-index:10000000000000;
 }
 
@@ -76,7 +82,7 @@ header, footer {
   padding:7px 15px 0 15px;
   position:absolute;
   right:0;
-  top:20%;
+  /* top:20%; */
   z-index:10000000000000;
 }
 
@@ -124,6 +130,57 @@ header, footer {
   text-decoration:none;
 }
 /*-- Hamburger Menu (end) --*/
+
+header {
+	align-items: center;
+	background-color: #1c1b21;
+	display: flex;
+	flex-flow: row nowrap;
+	height: 100px;
+	padding: 10px 15px;
+	width: 100%;
+}
+
+.logo {
+	color: #c9d1d1;
+	font: normal 2rem/1.5 'ratio', sans-serif;
+	padding: 0 10px;
+}
+/*----------- Header Styling (end) -------------*/
+
+/*----------- Footer Styling (begin) -----------*/
+footer {
+	align-items: center;
+	background-color: #c9d1d1;
+	color: #1c1b21;
+	display: flex;
+	flex-flow: row nowrap;
+	font: normal 0.8rem/1.5 'mr-eaves-modern', sans-serif;
+	height: 100px;
+	justify-content: space-between;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+.brandname {
+	font: normal 0.8rem/1.5 'ratio', sans-serif;
+}
+
+.nwd {
+	font: normal 0.8rem/1.5 'josefin-sans', sans-serif;
+	color: #1c1b21;
+}
+
+.nwd:hover {
+	color: #a3d06f;
+	text-shadow: 1px 1px 3px #1c1b21;
+}
+/*----------- Footer Styling (end) -------------*/
 
 
 /*--******************* Universal Styling (end) ************************--*/
