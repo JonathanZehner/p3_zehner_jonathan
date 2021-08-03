@@ -236,19 +236,27 @@ footer a {
 }
 /*----------- Left Aside Styling (end) -------------*/
 /*----------- Article Styling (begin) --------------*/
-.first, .second, .third {
+.lamp {
 	background: white url(../images/lghton-blkfade.png) no-repeat center;
 	background-size: cover;
 	margin-top: -4px;
 	text-align: center;
 }
 
-.article h2 {
-	padding-top: 85px;
+.article .first h2 {
+	padding-top: 100px;
+}
+
+.article .second h2 {
+	padding-top: 125px;
+}
+
+.article .second .padding-top {
+	padding-top: 200px;
 }
 
 .article .padding-bottom {
-	padding-bottom: 115px;
+	padding-bottom: 200px;
 }
 /*----------- Article Styling (end) ----------------*/
 /*----------- Right Aside Styling (begin) ----------*/
