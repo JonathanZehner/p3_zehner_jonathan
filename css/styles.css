@@ -247,7 +247,7 @@ footer a {
 	padding-top: 85px;
 }
 
-.article p {
+.article .padding-bottom {
 	padding-bottom: 115px;
 }
 /*----------- Article Styling (end) ----------------*/
@@ -268,13 +268,19 @@ footer a {
 .inner-box {
 	background-color: #a3d06f;
 	border-top: 5px solid #f0cf6e;
-	margin-top: -5px;
+	margin-top: -1px;
 }
 
 .inner-box ul li {
 	list-style-type: none;
 }
 
+.right figcaption {
+    font: normal 0.5rem/1.5 'ratio', sans-serif;
+    margin-top: -15px;
+		padding-left: 5px;
+    text-align: left;
+}
 
 /*----------- Right Aside Styling (end) ------------*/
 
