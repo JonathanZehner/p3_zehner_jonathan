@@ -1,3 +1,4 @@
+/*-- Reset Rule --*/
 * {
 	margin: 0;
 	padding: 0;
@@ -8,3 +9,61 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+/*-------------------------------------------------------------------
+
+				Fonts Used
+
+/------ Adobe Fonts --------/
+
+Ratio (Light)
+	font-family: 'ratio', sans-serif;
+
+Mr. Eaves Mod OT
+	font-family: 'mr-eaves-modern', sans-serif;
+
+-------------------------------------------------------------------*/
+
+/*--******************* Universal Styling (begin) **********************--*/
+/*-- Sticky Footer --*/
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+header, footer {
+	flex-shrink: 0;
+}
+
+/*--******************* Universal Styling (end) ************************--*/
+
+/*--******************* Home Page Styling (begin) **********************--*/
+
+
+
+/*--******************* Home Page Styling (end) ************************--*/
+
+/*--******************* About Page Styling (begin) *********************--*/
+
+
+
+/*--******************* About Page Styling (end) ***********************--*/
+
+/*--******************* Resources Page Styling (begin) *****************--*/
+
+
+
+/*--******************* Resources Page Styling (end) *******************--*/
+
+/*--******************* Media Queries (begin) **************************--*/
+
+
+
+/*--******************* Media Queries (end) ****************************--*/
