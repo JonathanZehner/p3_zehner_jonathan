@@ -244,20 +244,67 @@ footer a {
 }
 
 .article .first h2 {
-	padding-top: 100px;
+	background-color: #f7e8cb;
+	margin-top: -5px;
+	text-align: center;
 }
 
 .article .second h2 {
-	padding-top: 125px;
+	padding: 125px 2% 60px;
 }
 
-.article .second .padding-top {
+/* .article .second .padding-top {
 	padding-top: 200px;
+} */
+
+/* .article .padding-bottom {
+	padding-bottom: 200px;
+} */
+
+/*-- Accordion Menu (begin) --*/
+/*--===== Accordion Menu Code from =======================================/
+/======== https://www.w3schools.com/howto/howto_js_accordion.asp ======--*/
+.accordion {
+  background-color: #1c1b21;
+  color: #c9d1d1;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 
-.article .padding-bottom {
-	padding-bottom: 200px;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #c9d1d1;
+	color: #1c1b21;
 }
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: white;
+  display: none;
+  max-height: fit-content;
+  overflow: hidden;
+	padding: 0 18px;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #f7e8cb;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/*-- Accordion Menu (end) ----*/
 /*----------- Article Styling (end) ----------------*/
 /*----------- Right Aside Styling (begin) ----------*/
 .right {
