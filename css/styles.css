@@ -311,7 +311,50 @@ footer a {
 /*--******************* Resources Page Styling (end) *******************--*/
 
 /*--******************* Media Queries (begin) **************************--*/
+/*---------------- 500 Min-Width Media Query (begin) ------------------*/
+@media (min-width: 500px){
+
+	.content {
+		background-image: linear-gradient(to bottom, #1c1b21, transparent, #1c1b21);
+		flex-flow: row wrap;
+	}
+
+	.left {
+		background-position: top;
+		display: none;
+		order: 1;
+	}
+
+	.article {
+		height: 50vh;
+		order: 2;
+		overflow-y: scroll;
+		width: 100%;
+	}
+
+	.right {
+		order: 3;
+		width: 100%
+	}
 
 
+}
+
+
+
+/*---------------- 500 Min-Width Media Query (end) --------------------*/
+
+/*---------------- ### Min-Width Media Query (begin) ------------------*/
+
+
+
+
+/*---------------- ### Min-Width Media Query (end) --------------------*/
+/*---------------- ### Min-Width Media Query (begin) ------------------*/
+
+/*---------------- ### Min-Width Media Query (end) --------------------*/
+/*---------------- ### Min-Width Media Query (begin) ------------------*/
+
+/*---------------- ### Min-Width Media Query (end) --------------------*/
 
 /*--******************* Media Queries (end) ****************************--*/
