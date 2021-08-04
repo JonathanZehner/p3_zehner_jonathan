@@ -33,13 +33,15 @@ html, body {
 }
 
 body {
+	background-color: #1c1b21;
 	display: flex;
 	flex-direction: column;
 }
 
 main {
 	flex: 1 0 auto;
-	max-width: 1000px;
+	margin: 0 auto;
+	max-width: 2000px;
 	width: 100%
 }
 
@@ -187,7 +189,7 @@ footer {
 	display: flex;
 	flex-flow: row nowrap;
 	height: 100px;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 10px;
 	text-align: center;
 	width: 100%;
@@ -250,8 +252,9 @@ footer a {
 /*----------- Left Aside Styling (end) -------------*/
 /*----------- Article Styling (begin) --------------*/
 .lamp {
-	background: white url(../images/lghton-blkfade.png) no-repeat center;
+	background: white url(../images/lghton-blkfade.png) no-repeat top;
 	background-size: cover;
+	height: 175px;
 	margin-top: -4px;
 	text-align: center;
 }
@@ -291,7 +294,7 @@ footer a {
 .article .second h2 {
 	background-color: transparent;
 	margin: 0 auto;
-	padding: 95px 2% 90px;
+	padding: 95px 2% 25px;
 	width: 94%;
 }
 
@@ -317,7 +320,7 @@ footer a {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #c9d1d1;
+  background-color: #f0cf6e;
 	color: #1c1b21;
 }
 
@@ -444,13 +447,25 @@ footer a {
 		height: 50vh;
 	}
 }
-
 /*---------------- Smaller Min-Width Media Query (end) --------------------*/
 
 
-/*---------------- 600 Min-Width Media Query (begin) ------------------*/
+/*---------------- 635 Min-Width Media Query (begin) ------------------*/
+@media (min-width: 635px) {
+/*-- Home Page --*/
+	.lamp {
+		height: 250px;
+	}
 
-/*---------------- 600 Min-Width Media Query (end) --------------------*/
+	.article .second h2 {
+		padding: 145px 2% 25px
+	}
+
+}
+
+
+
+/*---------------- 635 Min-Width Media Query (end) --------------------*/
 
 /*---------------- 700 Min-Width Media Query (begin) ------------------*/
 @media (min-width: 700px){
@@ -518,6 +533,10 @@ footer a {
 		width: 100%;
 	}
 
+	.article .second h2 {
+		padding: 175px 2% 25px
+	}
+
 	.hero {
 		margin: 124px auto 0;
 	}
@@ -533,7 +552,6 @@ footer a {
 /*-- End Accordion Menu --*/
 
 }
-
 /*---------------- 700 Min-Width Media Query (end) --------------------*/
 /*---------------- 825 Min-Width Media Query (begin) ------------------*/
 @media (min-width: 825px) {
@@ -558,7 +576,7 @@ footer a {
 
 
 	.lamp {
-		background-size: contain;
+		background-position: top;
 	}
 
 	.panel p {
@@ -567,11 +585,93 @@ footer a {
 
 }
 
-
-
 /*---------------- 825 Min-Width Media Query (end) --------------------*/
+/*---------------- 900 Min-Width Media Query (begin) ------------------*/
+@media (min-width: 900px) {
+/*-- Home Page --*/
+	.left {
+		align-self: stretch;
+		background-position: top;
+		order: 3;
+		width: 100%;
+	}
+
+	.black {
+		height: 100%;
+	}
+
+	.article {
+		order: 1;
+		overflow-y: scroll;
+		width: 70%;
+	}
+
+	.padding {
+		padding: 0 10px;
+	}
+
+	.article .first p, .article .third h2, .article .third p {
+		background-color: white;
+		border: 3px solid white;
+		border-radius: 5px;
+		margin: 5px auto;
+	}
+
+	.right {
+		border: 3px solid #0f898a;
+		border-radius: 5px;
+		order: 2;
+		padding-top: 115px;
+		width: 27%;
+	}
+}
+/*---------------- 900 Min-Width Media Query (end) --------------------*/
+
+/*---------------- 1015 Min-Width Media Query (begin) ------------------*/
+@media (min-width: 1015px) {
+/*-- Home Page --*/
+	.left {
+		background-position: bottom;
+		background-size: cover;
+		height: 100vh;
+		order: 1;
+		padding-top: 115px;
+		width: 25%;
+	}
+
+	.article {
+		height: 100vh;
+		order: 2;
+		width: 50%;
+	}
+
+	.right {
+		height: 100vh;
+		order: 3;
+		overflow-y: scroll;
+		width: 22%;
+	}
+
+	.article .first {
+		background-color: #f7e8cb;
+		padding-bottom: 10px;
+	}
+
+
+
+}
+
+
+
+/*---------------- 1015 Min-Width Media Query (end) --------------------*/
+
 /*---------------- ### Min-Width Media Query (begin) ------------------*/
 
 /*---------------- ### Min-Width Media Query (end) --------------------*/
+
+/*---------------- ### Min-Width Media Query (begin) ------------------*/
+
+/*---------------- ### Min-Width Media Query (end) --------------------*/
+
 
 /*--******************* Media Queries (end) ****************************--*/

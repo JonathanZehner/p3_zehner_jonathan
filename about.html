@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Flip it off!</title>
+
+		<!-- FAVicon -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="img/ico"/>
+
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Adobe Fonts -->
+		<link rel="stylesheet" href="https://use.typekit.net/rel2iyb.css">
+
+<!-- Scripts -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<div class="header-logo">
+				<a href="#"><img src="images/fio-logoicon.png" alt="Flip it on logo which is a graphic light switch in the off position" title="Click me to see the site!" height="75" /></a>
+				<h1 class="logo">Flip It Off</h1>
+			</div>
+
+		<!-- Hamburger Menu (begin) -->
+			<button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
+
+			<nav class="menu">
+        <ul class="nav-main">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+		<!-- Hamburger Menu (end) -->
+		<!-- Desktop Nav Menu -->
+			<nav class="desktop-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="resources.html">Resources</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="content">
+			<aside class="left" id="turnoff">
+				<button class="clickme" id="click">
+					<img class="btn-lamp" id="reveal" src="images/btn-extlamp.png" alt="image of an external lamp" title="Click me to reveal the Infographic!"/>
+				</button>
+				<img class="md black" id="black" src="images/ltsoff-infographic.png" alt="Exterior light with black" title="Turn it on to reveal Infographic!" width="500"/>
+			</aside>
+
+			<div class="article">
+				<img class="hero lg" src="images/hero.gif" alt="image of a two-story house with all but one light out at night" title="Be sure to turn out any lights you aren't using!" width="800">
+				<article class="first">
+					<h2>When Should You Turn Off Your Lights?</h2>
+					<div class="padding">
+						<p>It really depends on the <em>type of bulb</em> and the <em>cost of electricity</em>. Whether you are using <em>incandescent, flourescent, halogen,</em> or <em><strong>LED</strong></em>, they each are very different from the other. With the exception of LED bulbs, they all have a nominal operating life that is affected by how many times they are turned on and off. LEDs are unaffected by turning them on and off.</p>
+						<p>However, with that being said, there are definitely some "do's" and "dont's" on deciding when to turn your lights off. Keep reading to find out more. <strong>Click the lamps to reveal more</strong>.</p>
+					</div>
+				</article>
+
+				<section class="section-break"><img class="lg" src="images/parkbulb.jpg" alt="Image of a lightbulb with a park draped over the top" title="Save the World!" width="750">
+
+				</section>
+
+				<article class="second">
+					<button class="lamp-btn" id="lamp"><img class="lg" src="images/desklamp-btn.png" alt="image of a woodgrain colored desklamp that is used as a button to reveal the contents of the heading" title="Click me to reveal more!" width="1000">
+					</button>
+
+					<img class="md" id="hide" src="images/ltsoff-infographic.png" alt="Exterior light with black" title="Turn it on to reveal Infographic!" width="500"/>
+
+
+					<div>
+						<div class="lamp">
+							<h2 class="lamph2" id="lampon">Types of Lights and Their Efficiency</h2>
+						</div>
+
+						<button class="accordion" id="accordion1">Incandescent and Halogen Lighting</button>
+							<div class="panel">
+								<p>Incandescent lights should be turned off whenever they are not needed, because they are the least efficient type of lighting. 90% of the energy they use is given off as heat, and only about 10% results in light. Turning lights off will also keep a room cooler, an extra benefit in the summer.</p>
+								<p>While halogens are more efficient than traditional incandescent bulbs, they use the same technology and are far less efficient than CFLs and LEDs. Therefore, it is best to turn these lights off whenever they are not needed.</p>
+							</div>
+					</div>
+
+					<div>
+						<button class="accordion" id="accordion2">LED Lighting</button>
+						<div class="panel">
+							<p>The operating life of a light emitting diode (LED) is unaffected by turning it on and off. While lifetime is reduced for fluorescent lamps the more often they are switched on and off, there is no negative effect on LED lifetime. This characteristic gives LEDs several distinct advantages when it comes to operations. For example, LEDs have an advantage when used in conjunction with occupancy sensors or daylight sensors that rely on on-off operation. Also, in contrast to traditional technologies, LEDs turn on at full brightness almost instantly, with no delay. LEDs are also largely unaffected by vibration because they do not have filaments or glass enclosures.</p>
+						</div>
+					</div>
+
+					<div>
+						<button class="accordion" id="accordion3">CFL or Flourescent Lighting</button>
+						<div class="panel">
+							<p>The operating life of CFLs is more affected by the number of times they are switched on and off. You can generally extend the life of a CFL bulb more by switching it on and off less frequently than if you simply use it less.</p>
+
+							<p>It is a popularly held belief that CFLs use a lot of energy to get started and it is better not to turn them off for short periods. The amount of energy varies between manufacturers and models—however, ENERGY STAR© rated bulbs are required to endure rapid cycling for five-minute intervals to ensure that they can hold up to frequent switching.</p>
+
+							<p>In any case, the relatively higher "inrush" current required lasts for half a cycle, or 1/120th of a second. The amount of electricity consumed to supply the inrush current is equal to a few seconds or less of normal light operation. Turning off fluorescent lights for more than 5 seconds will save more energy than will be consumed in turning them back on again. Therefore, the real issue is the value of the electricity saved by turning the light off relative to the cost of changing a lightbulb. This in turn determines the shortest cost-effective period for turning off a fluorescent light.</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="third">
+					<h2>The Takeaway?</h2>
+					<p>Turning off the lights when you leave your home is a cost-effective way to reduce your wasted energy. You need to choose high-quality light bulbs to make your home more energy efficient. Moreover, it’s also helpful to know essential things such as those mentioned above to help keep your energy bills low, save money, and preserve the Earth.</p>
+
+					<p>Turning off the lights when you leave your room can help save energy. It can also help reduce carbon emission and other harmful greenhouse gases. Hence, turning off your lights is a simple way to help protect the environment and save the planet.</p>
+
+					<p>It is essential to follow the general rules of thumb when it comes to turning off your lights. If you use incandescent bulbs, it’s vital to turn off the lights if you go out of your room for one minute or more. For fluorescent bulbs, you can leave the lights on if you’re out of your home for 15 minutes or less, and turn them off when you leave for more than 15 minutes.</p>
+
+					<p>Turning off your lights will also help reduce the use of non-renewable resources that are harmful to the environment. You can turn off the lights during the day especially if you don’t need them. You can also turn off your appliances to help reduce your carbon footprint and help save the planet.</p>
+				</article>
+			</div>
+
+			<aside class="right">
+				<div class="outer-box">
+					<figure>
+						<img class="md" src="images/ltblb.png" alt="Image of lightbulb with pull string being pulled by hand" title="Incandescent Bulbs vs Energy Conservation" width="200">
+						<figcaption>Photo courtesy of &copy;iStockphoto.com/kyoshino.
+						</figcaption>
+					</figure>
+					<div class="inner-box">
+						<h3>Some Useful Info</h3>
+						<ul>
+							<li>Incandesent bulbs give off 90% of energy as heat</li>
+							<li>Turning a 60 Watt bulb off for one hour saves 0.6 kW/hr which may save 1.2 cents per hour...multiply that by the number of bulbs you have in your house and the number of hours you use them!</li>
+							<li>If leaving a room for 15 minutes or more, turn those lights off</li>
+							<li>Leave CFL bulbs off for at least 5 seconds before turning back on</li>
+							<li>LEDs are unaffected by turning them off and on (unlike the other types of bulbs out there whose life is reduced each time they're turned off and on)</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+		</main>
+
+		<footer>
+			<div class="social-media">
+				<a href="#" target="_blank"><i class="fa fa-instagram" style="font-size:40px;color:#fbad50"></i></a>
+
+				<a href="#" target="_blank"><i class="fa fa-facebook-square" style="font-size:40px;color:#4267B2"></i></a>
+			</div>
+
+			<div class="footer-links">
+				<h4>Resources</h4>
+				<ul>
+					<li><a href="https://www.energy.gov/energysaver/save-electricity-and-fuel/lighting-choices-save-you-money/when-turn-your-lights">Energy.gov</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-links">
+				<h4>Resources</h4>
+				<ul>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-info">
+				<h4>Copyright 2021 <span class="brandname">Flip It Off</span> all rights reserved.</h4>
+				<p>Created by <a href="http://www.nomadwebdesigns.com" target="_blank" title="Visit me by clicking this link"><span class="nwd">Nomad Web Designs</span></a></p>
+			</div>
+
+		</footer>
+
+		<!-- <script src="js/backstretch.js"></script>
+		<script src="js/backstretch.min.js"></script> -->
+		<script src="js/main.js"></script>
+	</body>
+
+</html>
