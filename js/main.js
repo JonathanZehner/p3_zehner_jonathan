@@ -86,3 +86,9 @@ $('#lampon').on('click', function(){
   $('#accordion2').css('display', 'none');
   $('#accordion3').css('display', 'none');
 });
+
+
+
+// Backstretch Scripts
+// Desk Lamp for .article .second h2
+$("#lamp-backstretch").backstretch("/images/lghton-blkfade.png");

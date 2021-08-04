@@ -394,6 +394,16 @@ footer a {
 }
 
 /*---------------- 475 Min-Width Media Query (end) --------------------*/
+/*---------------- 600 Min-Width Media Query (begin) ------------------*/
+@media (min-width: 600) {
+/*============ Home Page Styling ========*/
+	.left {
+		height: 50vh;
+	}
+}
+
+/*---------------- 600 Min-Width Media Query (end) --------------------*/
+
 /*---------------- 700 Min-Width Media Query (begin) ------------------*/
 @media (min-width: 700px){
 /*============ Home Page Styling ========*/
