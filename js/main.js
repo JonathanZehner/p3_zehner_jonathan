@@ -69,3 +69,20 @@ $('#reveal').click(function(){
 });
 
 // Turns the lights on/off for article element to reveal/conceal the info
+$('#lamp').on('click', function(){
+  $('#hide').toggle();
+  $('#lampon').css('display', 'block');
+  $('#lamp').css('display', 'none');
+  $('#accordion1').css('display', 'block');
+  $('#accordion2').css('display', 'block');
+  $('#accordion3').css('display', 'block');
+});
+
+$('#lampon').on('click', function(){
+  $('#hide').toggle();
+  $('#lamp').css('display', 'block');
+  $('#lampon').css('display', 'none');
+  $('#accordion1').css('display', 'none');
+  $('#accordion2').css('display', 'none');
+  $('#accordion3').css('display', 'none');
+});

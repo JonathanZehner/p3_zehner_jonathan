@@ -256,10 +256,27 @@ footer a {
 	text-align: center;
 }
 
+.lamp-btn {
+	background-color: #1c1b21;
+}
+
+#lamp {
+	padding: 62px 0;
+}
+
+#lampon {
+	display: none;
+}
+
 .article {
 	background-color: white;
 	margin-top: -4px;
 }
+
+.article .second {
+	background-color: #1c1b21;
+}
+
 
 .article .first h2 {
 	background-color: #f7e8cb;
@@ -268,7 +285,8 @@ footer a {
 }
 
 .article .second h2 {
-	padding: 125px 2% 60px;
+	background-color: white;
+	padding: 95px 2% 90px;
 }
 
 /*-- Accordion Menu (begin) --*/
@@ -278,6 +296,7 @@ footer a {
   background-color: #1c1b21;
   color: #c9d1d1;
   cursor: pointer;
+	display: none;
   padding: 18px;
   width: 100%;
   text-align: left;
@@ -479,9 +498,6 @@ footer a {
 		margin: 50px auto;
 	}
 
-	.article .second {
-		background-color: #1c1b21;
-	}
 
 	.lamp {
 		background-size: contain;
