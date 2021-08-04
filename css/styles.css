@@ -296,17 +296,12 @@ footer a {
 }
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  content: '\224e'; /* Unicode character for "geometrically equivalent to" sign */
+  font-size: 1.2rem;
   color: #f7e8cb;
   float: right;
   margin-left: 5px;
 }
-
-.active:after {
-  content: "\02796"; /* Unicode character for "minus" sign (-) */
-}
-
 /*-- Accordion Menu (end) ----*/
 /*----------- Article Styling (end) ----------------*/
 /*----------- Right Aside Styling (begin) ----------*/
