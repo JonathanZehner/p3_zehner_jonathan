@@ -219,10 +219,15 @@ footer a {
 }
 /*----------- Left Aside Styling (begin) -----------*/
 .left {
-	background: white url(../images/extlght-on.png) no-repeat center;
+	background: #1c1b21 url(../images/extlght-on.png) no-repeat center;
 	background-size: contain;
+	height: 429px;
 	max-width: 500px;
 	width: 100%;
+}
+
+.clickme {
+	background-color: #1c1b21;
 }
 
 .btn-lamp {
@@ -243,6 +248,10 @@ footer a {
 	text-align: center;
 }
 
+.article {
+	margin-top: -4px;
+}
+
 .article .first h2 {
 	background-color: #f7e8cb;
 	margin-top: -5px;
@@ -252,14 +261,6 @@ footer a {
 .article .second h2 {
 	padding: 125px 2% 60px;
 }
-
-/* .article .second .padding-top {
-	padding-top: 200px;
-} */
-
-/* .article .padding-bottom {
-	padding-bottom: 200px;
-} */
 
 /*-- Accordion Menu (begin) --*/
 /*--===== Accordion Menu Code from =======================================/
@@ -284,12 +285,14 @@ footer a {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  background-color: white;
-  display: none;
-  max-height: fit-content;
-  overflow: hidden;
-	padding: 0 18px;
-  transition: max-height 0.2s ease-out;
+    background-color: #f7e8cb;
+    border-bottom: 5px solid #0f898a;
+    border-top: 5px solid #a3d06f;
+    display: none;
+    max-height: fit-content;
+    overflow: hidden;
+    padding: 0 18px;
+    transition: max-height 0.2s ease-out;
 }
 
 .accordion:after {
