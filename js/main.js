@@ -67,3 +67,5 @@ for (i = 0; i < acc.length; i++) {
 $('#reveal').click(function(){
   $('#black').toggle();
 });
+
+// Turns the lights on/off for article element to reveal/conceal the info

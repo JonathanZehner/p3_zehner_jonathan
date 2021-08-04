@@ -31,8 +31,10 @@
 
 	<body>
 		<header>
-			<a href="#"><img src="images/fio-logoicon.png" alt="Flip it on logo which is a graphic light switch in the off position" title="Click me to see the site!" height="75" /></a>
-			<h1 class="logo">Flip It Off</h1>
+			<div class="header-logo">
+				<a href="#"><img src="images/fio-logoicon.png" alt="Flip it on logo which is a graphic light switch in the off position" title="Click me to see the site!" height="75" /></a>
+				<h1 class="logo">Flip It Off</h1>
+			</div>
 
 		<!-- Hamburger Menu (begin) -->
 			<button class="hamburger">&#9776;</button>
@@ -79,8 +81,13 @@
 				</section>
 
 				<article class="second">
-					<div class="lamp">
-						<h2>Types of Lights and Their Efficiency</h2>
+					<div>
+						<div class="lamp"  id="lamp">
+							<button class="lamp" id="lamp-on"><img class="lg" src="images/desklamp-btn.png" alt="image of a woodgrain colored desklamp that is used as a button to reveal the contents of the heading" title="Click me to reveal more!" width="1000">
+							</button>
+							<h2>Types of Lights and Their Efficiency</h2>
+						</div>
+
 
 						<button class="accordion">Incandescent and Halogen Lighting</button>
 							<div class="panel">
