@@ -284,11 +284,19 @@ footer a {
 	text-align: center;
 }
 
+.article .first p {
+	padding: 10px 20px;
+}
+
 .article .second h2 {
 	background-color: transparent;
 	margin: 0 auto;
 	padding: 95px 2% 90px;
 	width: 94%;
+}
+
+.article .third {
+	padding: 25px 10px;
 }
 
 /*-- Accordion Menu (begin) --*/
@@ -441,12 +449,6 @@ footer a {
 
 
 /*---------------- 600 Min-Width Media Query (begin) ------------------*/
-@media (min-width: 600) {
-/*============ Home Page Styling ========*/
-	/* .left {
-		height: 50vh;
-	}
-} */
 
 /*---------------- 600 Min-Width Media Query (end) --------------------*/
 
@@ -522,7 +524,7 @@ footer a {
 
 	.right {
 		order: 3;
-		width: 50%
+		width: 50%;
 	}
 /*-- Accordion Menu --*/
 	.accordion {
