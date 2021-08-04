@@ -304,7 +304,7 @@ footer a {
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\02796"; /* Unicode character for "minus" sign (-) */
 }
 
 /*-- Accordion Menu (end) ----*/

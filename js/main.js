@@ -63,6 +63,7 @@ for (i = 0; i < acc.length; i++) {
 // Light Swith effect
 // Turns the lights on/off for left aside element to reveal/conceal the
 // Infographic
+// Code source: http://net-informations.com/jq/iq/hide.htm
 $('#reveal').click(function(){
   $('#black').toggle();
 });
