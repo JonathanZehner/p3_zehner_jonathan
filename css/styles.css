@@ -450,6 +450,10 @@ footer a {
 	text-align: left;
 }
 
+.about-content .panel {
+	overflow-y: scroll;
+}
+
 /*-- Accordion Menu (begin) --*/
 /*--===== Accordion Menu Code from =======================================/
 /======== https://www.w3schools.com/howto/howto_js_accordion.asp ======--*/
