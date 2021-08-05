@@ -502,11 +502,99 @@ footer a {
 
 /*--******************* About Page Styling (end) ***********************--*/
 
-/*--******************* Resources Page Styling (begin) *****************--*/
+/*--******************* Contact Page Styling (begin) *****************--*/
+/*-- Contact Form --*/
+.contact-section {
+	background-color: white;
+  font-family: 'ratio', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.contact-section h2 {
+	background-color: #a3d06fa8;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  text-align: center;
+}
 
+.fio-contact {
+	background-color: #0f898aab;
+  margin: 20px 0;
+	padding: 10px 0;
+}
 
-/*--******************* Resources Page Styling (end) *******************--*/
+.fio-contact div {
+  margin-bottom: 10px;
+}
+
+.label_input_wrap {
+  vertical-align: top;
+}
+
+.fio-contact input,
+.fio-contact textarea {
+  border: 1px solid #1c1b21;
+  border-radius: 3px;
+  font-family: 'ratio', sans-serif;
+  padding: 9px 11px;
+}
+
+.title,
+.first-name,
+.last-name,
+.email,
+.tel {
+  margin: 20px auto;
+  max-width: 180px;
+  text-align: left;
+}
+
+.comments {
+  display: none;
+  padding: 20px 0;
+}
+
+.radiobutton {
+  display: none;
+}
+
+.radiobutton input {
+  margin: 0 5px;
+}
+
+.dropdown {
+  padding: 20px 0;
+}
+
+.dropdown select{
+  font-family: 'ratio', sans-serif;
+  padding: 5px;
+}
+
+.submit input,
+.reset input {
+  background: #f0cf6e;
+  border: none;
+  border-radius: 3px;
+  color: #1c1b21;
+  font: 1.2rem/1.5 'mr-eaves-modern', sans-serif;
+  letter-spacing: .1em;
+  padding: 10px 25px;
+	width: 200px;
+}
+
+.contact-section p a {
+  font-family: 'ratio', sans-serif;
+  color: #549DB1;
+  text-decoration: none;
+  text-shadow: 0 1px 1px #1c1b21;
+}
+
+iframe {
+  display: none;
+}
+/*--******************* Contact Page Styling (end) *******************--*/
 
 /*--******************* Media Queries (begin) **************************--*/
 /*---------------- Smaller Min-Width Media Query (begin) ------------------*/
@@ -563,11 +651,93 @@ footer a {
 	.left {
 		height: 50vh;
 	}
+
+/*---------------- 480 Min-Width ----------------*/
+@media (min-width: 480px) {
+  .radiobutton .label_input_wrap {
+    display: inline;
+  }
+
+/*---------------- 490 Min-Width ----------------*/
+@media (min-width: 490px) {
+  .comments {
+    clear: both;
+    display: block;
+  }
+
+  #comments {
+    display: flow-root;
+    margin: auto;
+  }
+/*---------------- 610 Min-Width ----------------*/
+@media (min-width: 610px) {
+	.title,
+  .first-name,
+  .last-name,
+  .comments,
+  .radiobutton,
+  .dropdown,
+  .submit,
+  .reset {
+    margin-left: 4%;
+  }
+
+  .email, .tel {
+    margin-right: 4%;
+  }
+
+
+  .submit,
+  .reset {
+    display: inline-block;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .contact-section p {
+    clear: both;
+    color: #1E2223;
+  }
+
+/*---------------- 640 Min-Width ----------------*/
+@media (min-width: 640px) {
+  iframe {
+    display: block;
+  }
+
+	.contact .contact-section iframe {
+		margin: auto;
+	}
+
+
 }
 /*---------------- Smaller Min-Width Media Query (end) --------------------*/
+/*---------------- 420 Min-Width Media Query (begin) ----------------------*/
+@media (min-width: 420px) {
 
+  .title,
+  .first-name,
+  .last-name {
+    clear: left;
+    float: left;
+  }
 
-/*---------------- 635 Min-Width Media Query (begin) ------------------*/
+  .email,
+  .tel {
+    clear: right;
+    float: right;
+  }
+
+  .radiobutton {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .dropdown {
+    clear: both;
+  }
+/*---------------- 420 Min-Width Media Query (end) ------------------------*/
+/*---------------- 635 Min-Width Media Query (begin) ----------------------*/
 @media (min-width: 635px) {
 /*-- Home Page --*/
 	.lamp {
@@ -719,7 +889,31 @@ footer a {
 		padding-top: 100px;
 	}
 
+/*============ Contact Page Styling =====*/
+	.contact-content {
+		justify-content: center !important;
+	}
 
+	.contact-section {
+		padding-top: 115px;
+		width: 630px;
+	}
+
+	.fio-contact {
+		padding: 0 5%;
+	}
+
+	.title,
+	.first-name,
+	.last-name,
+	.email,
+	.tel {
+		width: 30%;
+	}
+
+	.contact .contact-section {
+		padding: 0 0;
+	}
 }
 /*---------------- 700 Min-Width Media Query (end) --------------------*/
 /*---------------- 825 Min-Width Media Query (begin) ------------------*/
@@ -795,7 +989,13 @@ footer a {
 	}
 }
 /*---------------- 900 Min-Width Media Query (end) --------------------*/
-
+/*---------------- 1000 Min-Width Media Query (begin) -----------------*/
+@media (min-width: 1000px){
+  .contact .about-main {
+    margin-top: 97px;
+  }
+}
+/*---------------- 1000 Min-Width Media Query (end) --------------------*/
 /*---------------- 1015 Min-Width Media Query (begin) ------------------*/
 @media (min-width: 1015px) {
 /*-- Home Page --*/

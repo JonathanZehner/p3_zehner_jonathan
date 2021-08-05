@@ -59,7 +59,126 @@
 		</header>
 
 		<main class="content contact-content">
+<!-- Contact Form Begin -->
+      <div class="container">
+        <section class="contact-section" id="contact">
+          <h2>Join the Flip It Off movement and pledge to help out on our site!</h2>
+					<p>Don't forget to make a post on Facebook, Instagram, or your favorite social media site.</p>
+          <form class="fio-contact" id="test_form" name="test_form" action="form.php" onsubmit="return validateForm(this)" method="post">
+            <div class="title">
+              <label for="title" class="label_input_wrap">Title</label>
+              <input type="text" name="req_title" placeholder="Mr., Mrs., Dr., etc..." id="title" value=""/>
+            </div>
 
+            <div class="email">
+              <label for="email" class="label_input_wrap">Email: </label>
+              <input type="email" name="req_email" placeholder="Your Email Here" id="email" value=""/>
+            </div>
+
+            <div class="first-name">
+              <label for="firstname" class="label_input_wrap">First Name:</label>
+              <input type="text" name="req_firstname" placeholder="Your First Name Here" id="firstname" value=""/>
+            </div>
+
+            <div class="tel">
+              <label for="telephone" class="label_input_wrap">Phone Number: </label>
+              <input type="tel" name="telephone" placeholder="Your Phone Number Here" id="telephone" value=""/>
+            </div>
+
+            <div class="last-name">
+              <label for="lastname" class="label_input_wrap">Last Name:</label>
+              <input type="text" name="req_lastname" placeholder="Your Last Name Here" id="lastname" value=""/>
+            </div>
+
+            <div class="comments">
+              <label for="comments" class="label_input_wrap">Comments:</label>
+              <textarea name="comments" maxlength="1000" rows="15" cols="55" placeholder="Leave me a comment here..." id="comments"></textarea>
+            </div>
+
+            <div class="radiobutton">
+              <label for="call-time" class="label_input_wrap">Best time to call: </label>
+
+              <div class="radio-input">
+                <input type="radio" name="Call Time" value="mornings" id="mornings"/><label class="label_input_wrap" for="mornings">Mornings</label>
+
+                <input type="radio" name="Call Time" value="afternoons" id="afternoons"/><label class="label_input_wrap" for="afternoons">Afternoons</label>
+
+                <input type="radio" name="Call Time" value="evenings" id="evenings"/><label class="label_input_wrap" for="evenings">Evenings</label>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <label for="state" class="label_input_wrap">Where do you live? </label>
+
+              <select name="state" id="state">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Deleware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC" selected>North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+
+            <div class="submit">
+              <input type="submit" value="Send">
+            </div>
+
+            <div class="reset">
+              <input type="reset" value="Reset">
+            </div>
+          </form>
+
+          <p>Address: P.O.Box 12345, Jacksonville, NC | Phone: <a href="tel:7575810274">757.581.0274</a> | Email: <a href="mailto:jonathan.zehner@nomadwebdesigns.com">Flip It Off</a></p>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104932.46346721382!2d-77.46408492227333!3d34.72687834637306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9051c72746623%3A0x508f21eb3f052f41!2sJacksonville%2C%20NC!5e0!3m2!1sen!2sus!4v1619123302872!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+      </div>
+<!-- Contact Form End -->
 		</main>
 
     <footer>
