@@ -440,7 +440,9 @@ footer a {
 .about-content {
 	background-color: white;
 	margin: 0 auto;
+	max-width: 800px;
 	text-align: center;
+	width: 100%;
 }
 
 .about-content p {
@@ -543,6 +545,12 @@ footer a {
 @media (min-width: 450px) {
 	.article .second h2 {
 		width: 60%;
+	}
+
+	.aboutpanel .sm {
+		float: left;
+		padding: 10px;
+		width: 25%;
 	}
 }
 
@@ -702,6 +710,11 @@ footer a {
 		color: #0f898a;
 		transition: 0.2s ease-out;
 	}
+/*============ About Page Styling =======*/
+	.about-hero {
+		padding-top: 100px;
+	}
+
 
 }
 /*---------------- 700 Min-Width Media Query (end) --------------------*/
