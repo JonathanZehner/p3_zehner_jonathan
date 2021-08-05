@@ -50,13 +50,13 @@ header, footer {
 }
 /*-- End Sticky Footer --*/
 
-/*----------- Header Styling (begin) -----------*/
-.desktop-nav {
+/*----------- Header (Footer Hamburger) Styling (begin) -----------*/
+.desktop-nav, .desktop-nav2 {
   display: none;
 }
 
 /*-- Hamburger Menu (begin) --*/
-.hamburger{
+.hamburger, .hamburger2 {
   background:none;
   border:0;
   color:#f7e8cb;
@@ -72,7 +72,14 @@ header, footer {
   z-index:10000000000000;
 }
 
-.cross{
+.hamburger2 {
+	color: #1c1b21;
+  left: 2%;
+	padding: 0 0 0 0;
+	position: relative;
+}
+
+.cross, .cross2 {
   background:none;
   border:0;
   color:#f7e8cb;
@@ -88,7 +95,14 @@ header, footer {
   z-index:10000000000000;
 }
 
-.menu {
+.cross2 {
+	color: #1c1b21;
+  left: 2%;
+	padding: 0 0 0 0;
+	position: relative;
+}
+
+.menu, .menu2 {
   background-color: #1c1b21;
   position:absolute;
   text-align:center;
@@ -97,29 +111,34 @@ header, footer {
   z-index:1000000;
 }
 
-.menu ul {
+.menu2 {
+	left: 0;
+  top: 55vh;
+}
+
+.menu ul, .menu2 ul {
   list-style-image: none;
   list-style-type: none;
 }
 
-.menu li {
+.menu li, .menu2 li {
   border-bottom:#c9d1d1 1px solid;
   display: block;
   padding:15px 0 15px 0;
 }
 
-.menu li:hover {
+.menu li:hover, .menu2 li:hover {
   background:#a3d06f;
   border-bottom:#1c1b21 1px solid;
   display: block;
   padding:15px 0 15px 0;
 }
 
-.menu li:hover a {
+.menu li:hover a, .menu2 li:hover a {
 	color: #1c1b21;
 }
 
-.menu ul li a {
+.menu ul li a, .menu2 ul li h4, .menu2 ul li a {
   color:#f7e8cb;
   font: normal 1.3rem/1 'ratio', sans-serif;
   margin: 0px;
@@ -127,7 +146,7 @@ header, footer {
   text-shadow: 1px 1px #00000073;
 }
 
-.menu ul li a:hover {
+.menu ul li a:hover, .menu2 ul li h4:hover, .menu2 ul li a:hover {
   color: #1c1b21;
   text-decoration:none;
 }
@@ -225,32 +244,14 @@ footer a {
 
 .footer-info {
 	flex-grow: 1;
-	width: 33.33333333333%;
+	order: 2;
+	width: 45%;
 }
 
 .footer-links {
 	align-self: center;
-	width: 33.33333333333%;
-}
-
-.footer-links h4 {
-	font-size: 1rem;
-	padding-bottom: 3px;
-	text-decoration: underline;
-}
-
-.footer-links ul li {
-	font: normal 0.8rem/1.25 'ratio', sans-serif;
-}
-
-.footer-links ul li a {
-	color: #1c1b21;
-	transition: 0.2s;
-}
-
-.footer-links ul li a:hover {
-	color: #0f898a;
-	transition: 0.2s ease-out;
+	order: 1;
+	width: 15%;
 }
 
 .social-media {
@@ -258,6 +259,7 @@ footer a {
 	flex-flow: row wrap;
 	flex-grow: 1;
 	justify-content: center;
+	order: 3;
 	width: 33.33333333333%;
 }
 
@@ -435,6 +437,60 @@ footer a {
 /*--******************* Home Page Styling (end) ************************--*/
 
 /*--******************* About Page Styling (begin) *********************--*/
+.about-content {
+	background-color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about-content p {
+	padding: 5px 3%;
+	text-align: left;
+}
+
+/*-- Accordion Menu (begin) --*/
+/*--===== Accordion Menu Code from =======================================/
+/======== https://www.w3schools.com/howto/howto_js_accordion.asp ======--*/
+.aboutaccordion {
+  background-color: #1c1b21;
+	border: none;
+  color: #c9d1d1;
+  cursor: pointer;
+	/* display: none; */
+	margin: 0 auto;
+	outline: none;
+  padding: 18px;
+  text-align: left;
+  transition: 0.4s;
+	width: 100%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.aboutactive, .aboutaccordion:hover {
+  background-color: #f0cf6e;
+	color: #1c1b21;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.aboutpanel {
+    background-color: #f7e8cb;
+    border-bottom: 5px solid #0f898a;
+    border-top: 5px solid #a3d06f;
+    display: none;
+    max-height: fit-content;
+    overflow: hidden;
+    padding: 0 18px;
+    transition: max-height 0.2s ease-out;
+}
+
+.aboutaccordion:after {
+  content: '\224e'; /* Unicode character for "geometrically equivalent to" sign */
+  font-size: 1.2rem;
+  color: #f7e8cb;
+  float: right;
+  margin-left: 5px;
+}
+/*-- Accordion Menu (end) ----*/
 
 
 
@@ -532,7 +588,7 @@ footer a {
 	}
 
 /*-- Nav Menu --*/
-	.menu, .hamburger, .cross {
+	.menu, .hamburger, .cross, .menu2, .hamburger2, .cross2 {
 		display: none;
 	}
 
@@ -599,6 +655,53 @@ footer a {
 	  text-align: center;
 	}
 /*-- End Accordion Menu --*/
+/*-- Footer Nav Menu --*/
+	.desktop-nav2 {
+		display: block;
+	}
+
+	.footer-info {
+		order: 1;
+		width: 33.33333333333%;
+	}
+
+	.footer-info h4 {
+		padding-bottom: 0;
+	}
+
+	.footer-info p {
+		padding-top: 0;
+	}
+
+	.footer-links {
+		order: 2;
+		width: 33.33333333333%;
+	}
+
+	.social-media {
+		order: 3;
+		width: 33.33333333333%;
+	}
+
+	.footer-links h4 {
+		font-size: 1rem;
+		padding-bottom: 3px;
+		text-decoration: underline;
+	}
+
+	.footer-links ul li {
+		font: normal 0.8rem/1.25 'ratio', sans-serif;
+	}
+
+	.footer-links ul li a {
+		color: #1c1b21;
+		transition: 0.2s;
+	}
+
+	.footer-links ul li a:hover {
+		color: #0f898a;
+		transition: 0.2s ease-out;
+	}
 
 }
 /*---------------- 700 Min-Width Media Query (end) --------------------*/
